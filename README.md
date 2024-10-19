@@ -3,12 +3,10 @@ Hi folks today in this task you will learn how to build and integrate you cicd p
 **Prerequisite for this lab **
 jenkins machine container with 250 MB of memory or 500 CPU 
 10 GB hard disk 
-step -1 
-**you have to install docker engine on you machine ** 
-step-2
-**Write a dockerfile for make jenkins container to setup cicd pipeline **
+**step -1** you have to install docker engine on you machine ** 
+**step-2 ** Write a dockerfile for make jenkins container to setup cicd pipeline **
 
-docker build -t myjenkins-blueocean:2.319.2-1 . 
+        **docker build -t myjenkins-blueocean:2.319.2-1 .** 
 step-3  run the docker container after mapping volume or add configuration 
 
 **docker run --name jenkins-blueocean --rm --detach \
@@ -20,5 +18,5 @@ step-3  run the docker container after mapping volume or add configuration
   --volume "$HOME":/home \
   myjenkins-blueocean:2.319.2-1**
   
-  step -4  
+
   
